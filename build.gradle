@@ -53,8 +53,8 @@ tasks.withType(Test) {
     }
 }
 
-task job_task(type: Test) {
+task steam_task(type: Test) {
     useJUnitPlatform {
-        includeTags("job_tests")
+        includeTags("steam_tests")
     }
 }

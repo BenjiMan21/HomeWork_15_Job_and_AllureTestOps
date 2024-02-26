@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 @DisplayName("Тесты для вакансии")
-@Tag("job_tests")
+@Tag("steam_tests")
 public class JobTest extends TestBase {
     String game = "Loop Hero";
     String price = "14,79€";
