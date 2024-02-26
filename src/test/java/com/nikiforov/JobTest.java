@@ -13,7 +13,7 @@ import static io.qameta.allure.Allure.step;
 @Tag("job_tests")
 public class JobTest extends TestBase {
     String game = "Loop Hero";
-    String price = "550 руб";
+    String price = "14,79€";
 
     @Test
     @Owner("Nikiforov")
@@ -35,7 +35,7 @@ public class JobTest extends TestBase {
     void jumpToSupportPage() {
         step("Кликаем на ИНФОРМАЦИЯ в меню навигации", ()-> {
             open("");
-            $(".supernav_container").shouldHave(text("ABOUT")).click();
+            $(".supernav_container").shouldHave(text("About")).click();
         });
         step("Проверка перехода на страницу информации", ()-> {
             $("#about_greeting")
