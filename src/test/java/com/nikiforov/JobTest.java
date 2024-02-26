@@ -22,10 +22,10 @@ public class JobTest extends TestBase {
         step("Смена языка магазина на главной странице", ()-> {
             open("");
             $("#language_pulldown").click();
-            $("#language_dropdown").$(byText("English (английский)")).click();
+            $("#language_dropdown").$(byText("Русский (Russian)")).click();
         });
         step("Проверка смены языка", ()-> {
-            $(".supernav_container").shouldHave(text("STORE"));
+            $(".supernav_container").shouldHave(text("МАГАЗИН"));
         });
     }
 
@@ -35,11 +35,11 @@ public class JobTest extends TestBase {
     void jumpToSupportPage() {
         step("Кликаем на ИНФОРМАЦИЯ в меню навигации", ()-> {
             open("");
-            $(".supernav_container").shouldHave(text("ИНФОРМАЦИЯ")).click();
+            $(".supernav_container").shouldHave(text("ABOUT")).click();
         });
         step("Проверка перехода на страницу информации", ()-> {
             $("#about_greeting")
-                    .shouldHave(text("Steam — превосходная платформа для игроков и разработчиков."));
+                    .shouldHave(text("Steam is the ultimate destination for playing, discussing, and creating games."));
         });
     }
 
@@ -86,7 +86,7 @@ public class JobTest extends TestBase {
         });
         step("Возвращаемся на главную страницу, " +
                 "затем снова в корзину и проверяем что видеоигра находится в корзине", ()-> {
-            $(".store_nav").$(byText("Магазин")).click();
+            $(".store_nav").$(byText("Your Store")).click();
             $("#cart_link").click();
             $(".cart_item_list").shouldHave(text(game));
         });
@@ -109,12 +109,12 @@ public class JobTest extends TestBase {
         });
         step("Возвращаемся на главную страницу, " +
                 "затем снова в корзину и удаляем видеоигру из корзины", ()-> {
-            $(".store_nav").$(byText("Магазин")).click();
+            $(".store_nav").$(byText("Your Store")).click();
             $("#cart_link").click();
             $(".remove_link").click();
         });
         step("Проверяем что товар удалён из корзины", ()-> {
-            $(".cart_status_message").shouldHave(text("Товар удалён!"));
+            $(".cart_status_message").shouldHave(text("Your item has been removed!"));
         });
     }
 
