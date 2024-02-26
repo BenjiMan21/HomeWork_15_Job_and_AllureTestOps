@@ -35,7 +35,7 @@ public class JobTest extends TestBase {
     void jumpToSupportPage() {
         step("Кликаем на ИНФОРМАЦИЯ в меню навигации", ()-> {
             open("");
-            $(".supernav_container").$(byText("ABOUT")).click();
+            $(".supernav_container").$(byText("About")).click();
         });
         step("Проверка перехода на страницу информации", ()-> {
             $("#about_greeting")
