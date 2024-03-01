@@ -10,13 +10,13 @@ import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 @DisplayName("Тесты для вакансии")
+@Owner("Nikiforov")
 @Tag("steam_tests")
 public class JobTest extends TestBase {
     String game = "Loop Hero";
     String price = "14,79€";
 
     @Test
-    @Owner("Nikiforov")
     @DisplayName("Смена языка на главной странице")
     void changeLanguage() {
         step("Смена языка магазина на главной странице", ()-> {
@@ -30,7 +30,6 @@ public class JobTest extends TestBase {
     }
 
     @Test
-    @Owner("Nikiforov")
     @DisplayName("Проверка перехода на страницу информации")
     void jumpToSupportPage() {
         step("Кликаем на ИНФОРМАЦИЯ в меню навигации", ()-> {
@@ -44,7 +43,6 @@ public class JobTest extends TestBase {
     }
 
     @Test
-    @Owner("Nikiforov")
     @DisplayName("Проверка строки поиска")
     void searchGame() {
         step("Пишем название видеоигры в строке поиска", ()-> {
@@ -57,7 +55,6 @@ public class JobTest extends TestBase {
     }
 
     @Test
-    @Owner("Nikiforov")
     @DisplayName("Поверка цены видеоигры")
     void checkGamePrice() {
         step("Пишем название видеоигры в строке поиска", ()-> {
@@ -71,7 +68,6 @@ public class JobTest extends TestBase {
     }
 
     @Test
-    @Owner("Nikiforov")
     @DisplayName("Добавление видеоигры в корзину")
     void addGameToCart() {
         step("Пишем название видеоигры в строке поиска", ()-> {
@@ -93,7 +89,6 @@ public class JobTest extends TestBase {
     }
 
     @Test
-    @Owner("Nikiforov")
     @DisplayName("Удаляем видеоигру из корзины")
     void deleteGameFromCart() {
         step("Пишем название видеоигры в строке поиска", ()-> {
