@@ -11,8 +11,8 @@
 - [Пример Allure-отчета](#-пример-allure-отчета)
 - [Интеграция с Allure TestOps](#-интеграция-с-allure-testOps)
 - [Интеграция с Jira](#-интеграция-с-jira)
-- [Уведомления в Telegram](#-уведомления-в-telegram)
-- [Видео примера запуска тестов в Selenoid](#-видео-примера-запуска-теста-в-selenoid)
+- [Уведомления в Telegram](#-уведомления-в-telegram-с-использованием-бота)
+- [Видео примера запуска тестов в Selenoid](#-видео-примера-запуска-тестов-в-selenoid)
 
 ## :computer: Используемый стек
 
@@ -67,7 +67,7 @@ clean steam_task
 * <code>COMMENT</code> – комментарий к сборке.
 
 
-## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/Jenkins.svg"> [Сборка](https://jenkins.autotests.cloud/view/C24/job/C24-MolokoVelosiped-homework17/) в Jenkins
+## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/Jenkins.svg"> [Сборка](https://jenkins.autotests.cloud/job/Nikiforov_HomeWork_15_Job_and_AllureTestOps/) в Jenkins
 
 Для запуска сборки необходимо перейти в раздел <code>Build with Parameters</code> и нажать кнопку <code>Build</code>.
 <p align="center">
@@ -75,7 +75,7 @@ clean steam_task
 </p>
 После выполнения сборки, в блоке <code>Build History</code> напротив номера сборки появятся значки <code>Allure TestOps</code> и <code>Allure Report</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
 
-## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logos/AllureReport.svg"> [Пример](https://jenkins.autotests.cloud/view/C24/job/C24-MolokoVelosiped-homework17/6/allure/) Allure-отчета
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logos/AllureReport.svg"> [Пример](https://jenkins.autotests.cloud/job/Nikiforov_HomeWork_15_Job_and_AllureTestOps/10/allure/) Allure-отчета
 ### Overview
 
 <p align="center">
@@ -88,7 +88,7 @@ clean steam_task
 <img title="Список тест-кейсов в отчёте Allure" src="media/screenshots/AllureSuites.jpg">
 </p>
 
-## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="media/logos/AllureTestOps.svg"> [Интеграция](https://allure.autotests.cloud/project/4071/dashboards) с Allure TestOps
+## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="media/logos/AllureTestOps.svg"> [Интеграция](https://allure.autotests.cloud/project/4087/dashboards) с Allure TestOps
 
 На *Dashboard* в <code>Allure TestOps</code> видна статистика количества тестов. Новые тесты, а также результаты прогона приходят по интеграции при каждом запуске сборки.
 
@@ -102,7 +102,7 @@ clean steam_task
 <img title="Результаты теста в Allure TestOps" src="media/screenshots/AllureTestOpsTest.jpg">
 </p>
 
-## <img width="4%" style="vertical-align:middle" title="Jira" src="media/logos/Jira.svg"> [Интеграция](https://jira.autotests.cloud/browse/HOMEWORK-1120) с Jira
+## <img width="4%" style="vertical-align:middle" title="Jira" src="media/logos/Jira.svg"> [Интеграция](https://jira.autotests.cloud/browse/HOMEWORK-1134) с Jira
 
 Реализована интеграция <code>Allure TestOps</code> с <code>Jira</code>, в тикете отображается, какие тест-кейсы были написаны в рамках задачи и их прогоны.
 
